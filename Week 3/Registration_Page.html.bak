@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Registration Page</title>
+</head>
+<body>
+
+	<h3 align="middle"><font color="red">Registration Page</font></h3>
+		
+	<table border="1"  width="40%">
+	
+	<form action="/action_page.php">
+	
+	<tbody>
+	<tr>
+	
+		<td><label for="name">Name: </label></td>
+		<td><input type="text" id="name" name="name" value="Nimal"><br></td>
+		
+	</tr>	
+	
+	<tr>
+	
+		<td><label for="password">Password </label></td>
+		<td><input type="password"><br><br></td>
+		
+	</tr>
+	
+	<tr>
+	
+		<td><label for="country">Country: </label></td>
+		<td><select id="country" name="country">
+		<option value="srilanka">Sri Lanka</option>
+		<option value="india">India</option>
+		<option value="nepal">Nepal</option>
+		<option value="china">China</option>
+	</select><br><br><br></td>
+		
+	</tr>
+	
+	<tr>
+	
+		<td><label for="fruits">Fruits: </label></td>
+		<td><select id="country" name="country">
+		<option value="srilanka">Mango</option>
+		<option value="india">Banana</option>
+		<option value="nepal">Apple</option>
+		<option value="china">Orange</option>
+	</select><br><br><br></td>
+		
+	</tr>
+	
+	<tr>
+	
+		<td><label for="gender">Gender: </label></td>
+		<td><input type="radio" name="Gender" value="Female">
+			<label for="female">Female</label><br>
+			<input type="radio" name="Gender" value="Male">
+			<label for="male">Male</label><br></td>
+		
+	</tr>
+	
+	
+	<tr>
+	
+		<td><label for="hobbies">Hobbies: </label></td>
+		<td><input type="checkbox" id="hobbies1" name="hobbies1" value="Criket">
+		<label for="hobbies1">Criket</label>
+		<input type="checkbox" id="hobbies2" name="hobbies2" value="Swimming">
+		<label for="hobbies2">Swimming</label>
+		<input type="checkbox" id="hobbies3" name="hobbies3" value="Rugby">
+		<label for="hobbies3">Rugby</label>
+		<input type="checkbox" id="hobbies4" name="hobbies4" value="Football">
+		<label for="hobbies4">Football</label><br></td>
+		
+	</tr>
+	
+	<tr>
+	
+		<td><label for="photo">Photo: </label></td>
+		<td><input type="file"><br></td>
+		
+	</tr>
+	
+	
+	<tr>
+	
+		<td><label for="comments">Comments: </label></td>
+		<td  align="middle"><textarea rows="5" cols="60" placeholder="write your comment here."></textarea><br></td>
+		
+	</tr>
+	
+	<tr>
+	
+		<td colspan=2 align="middle"> <input type="button" name="Cancel" value="Cancel">
+			<input type="button" name="send" value="send"><br><br></label></td>
+		
+	</tr>
+	
+	</tbody>
+	
+</table>
+
+</form>
+	
+</body>
+</html>

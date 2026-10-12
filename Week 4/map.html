@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Image Map Example</title>
+</head>
+<body>
+    <h1>Interactive Map Example</h1>
+    <p>Click on the regions in the image below:</p>
+
+    <!-- Image with a map -->
+    <img src="world-map-continents-oceans.png" alt="World Map" usemap="#worldmap">
+
+    <!-- Define the map areas -->
+    <map name="worldmap">
+        <!-- Rectangle area: x1,y1,x2,y2 -->
+        <area shape="rect" coords="849,721,1271,284" href="https://en.wikipedia.org/wiki/Africa" alt="Africa">
+
+        <!-- Circle area: centerX,centerY,radius -->
+        <area shape="circle" coords="1132,188,118" href="https://en.wikipedia.org/wiki/Europe" alt="Europe">
+
+        <!-- Polygon area: x1,y1,x2,y2,x3,y3,... -->
+        <area shape="poly" coords="75,143,542,445,723,69" href="https://en.wikipedia.org/wiki/North_America" alt="North America">
+    </map>
+</body>
+</html>
+
+<!---https://www.image-map.net/?utm_source=chatgpt.com--->
