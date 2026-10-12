@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome Form</title>
+</head>
+<body>
+
+<h2>Enter Your Name</h2>
+
+<form name="alertform" onsubmit="showMessage(); return false;">
+  <label for="yourname">Your Name:</label>
+  <input type="text" id="yourname" name="yourname" placeholder="Enter your name">
+  <input type="submit" value="Go">
+</form>
+
+<script>
+  function showMessage() {
+
+    let name = document.alertform.yourname.value;
+
+
+    if (name.trim() === "") {
+      alert("Please enter your name!");
+    } else {
+      alert("Hello " + name + "!");
+    }
+  }
+</script>
+
+</body>
+</html>

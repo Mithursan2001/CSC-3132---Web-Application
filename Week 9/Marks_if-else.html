@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Grade Calculator</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 300px;
+    }
+    td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    input {
+      width: 90%;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <td>Maths</td>
+      <td><input type="number" id="marks1" placeholder="Enter marks" onchange="calculateGrade(1)"></td>
+      <td><input type="text" id="grade1" readonly></td>
+    </tr>
+    <tr>
+      <td>Science</td>
+      <td><input type="number" id="marks2" placeholder="Enter marks" onchange="calculateGrade(2)"></td>
+      <td><input type="text" id="grade2" readonly></td>
+    </tr>
+    <tr>
+      <td>History</td>
+      <td><input type="number" id="marks3" placeholder="Enter marks" onchange="calculateGrade(3)"></td>
+      <td><input type="text" id="grade3" readonly></td>
+    </tr>
+  </table>
+
+  <script>
+    function calculateGrade(num) {
+      const marks = parseFloat(document.getElementById("marks" + num).value);
+      const gradeInput = document.getElementById("grade" + num);
+      let grade = "";
+
+      if (isNaN(marks)) {
+        grade = "";
+      } else if (marks >= 75) {
+        grade = "A";
+      } else if (marks >= 65) {
+        grade = "B";
+      } else if (marks >= 55) {
+        grade = "C";
+      } else {
+        grade = "F";
+      }
+
+      gradeInput.value = grade;
+    }
+  </script>
+
+</body>
+</html>

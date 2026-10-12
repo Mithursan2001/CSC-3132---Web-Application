@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple User Form</title>
+</head>
+<body>
+
+  <h2>User Information Form</h2>
+
+  <!-- Form starts here -->
+  <form onsubmit="showInfo(event)">
+    <!-- First Name -->
+    <label>First Name:</label>
+    <input type="text" id="firstName"><br><br>
+
+    <!-- Last Name -->
+    <label>Last Name:</label>
+    <input type="text" id="lastName"><br><br>
+
+    <!-- Address -->
+    <label>Address:</label>
+    <input type="text" id="address"><br><br>
+
+    <!-- Gender -->
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male"> Male<br>
+    <input type="radio" name="gender" value="Female"> Female<br><br>
+
+    <!-- Email -->
+    <label>Email:</label>
+    <input type="email" id="email"><br><br>
+
+    <!-- Hobbies -->
+    <label>Hobbies:</label><br>
+    <input type="checkbox" name="hobby" value="Reading"> Reading<br>
+    <input type="checkbox" name="hobby" value="Playing"> Playing<br>
+    <input type="checkbox" name="hobby" value="Cricket"> Cricket<br>
+    <input type="checkbox" name="hobby" value="Gardening"> Gardening<br>
+    <input type="checkbox" name="hobby" value="Watching TV"> Watching TV<br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Where the result will be shown -->
+  <div id="result" style="margin-top:20px;"></div>
+
+  <!-- JavaScript to handle form -->
+  <script>
+    function showInfo(event) {
+      event.preventDefault(); // Stop the page from reloading
+
+      // Get values from inputs
+      var firstName = document.getElementById("firstName").value;
+      var lastName = document.getElementById("lastName").value;
+      var address = document.getElementById("address").value;
+      var email = document.getElementById("email").value;
+
+      // Get selected gender
+      var genderInput = document.querySelector('input[name="gender"]:checked');
+      var gender = genderInput ? genderInput.value : "Not selected";
+
+      // Get selected hobbies
+      var hobbyInputs = document.querySelectorAll('input[name="hobby"]:checked');
+      var hobbies = [];
+      for (var i = 0; i < hobbyInputs.length; i++) {
+        hobbies.push(hobbyInputs[i].value);
+      }
+
+      // Show the result
+      var result = "<h3>Submitted Information:</h3>";
+      result += "First Name: " + firstName + "<br>";
+      result += "Last Name: " + lastName + "<br>";
+      result += "Address: " + address + "<br>";
+      result += "Gender: " + gender + "<br>";
+      result += "Email: " + email + "<br>";
+      result += "Hobbies: " + (hobbies.length > 0 ? hobbies.join(", ") : "None");
+
+      document.getElementById("result").innerHTML = result;
+    }
+  </script>
+
+</body>
+</html>

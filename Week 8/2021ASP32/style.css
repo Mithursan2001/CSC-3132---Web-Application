@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffe5d9;
+  padding: 15px 30px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #5c3d2e;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('hero.png') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(17, 17, 17);
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  padding: 10px 20px;
+  background-color: #ffb4a2;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.featured {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cake-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cake-box {
+  background-color: #e2e0e0;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.cake-box img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+
+.gallery {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, auto); 
+  gap: 10px;
+}
+
+.gallery-item {
+  background-color: #9c9393;
+  padding: 4px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.gallery-item p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #918686;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px;
+  background-color: #ffb4a2;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+
+.footer {
+  background-color: #dad1cd;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #110e0d;
+}
