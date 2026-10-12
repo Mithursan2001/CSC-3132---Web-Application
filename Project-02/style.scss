@@ -1,0 +1,106 @@
+// Variables
+$primary-color: #2c5aa0;
+$secondary-color: #e63946;
+$accent-color: #f1faee;
+$text-color: #1d3557;
+$light-bg: #f8f9fa;
+
+// Global Styles
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $text-color;
+    background-color: $light-bg;
+}
+
+// Navbar
+.navbar {
+    background-color: $primary-color;
+    
+    .navbar-brand, .nav-link {
+        color: white !important;
+    }
+    
+    .nav-link:hover {
+        color: $accent-color !important;
+    }
+}
+
+// Hero Section
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?batticaloa,srilanka');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+// Section Titles
+.section-title {
+    color: $primary-color;
+    border-bottom: 2px solid $secondary-color;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+// Cards
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    
+    &:hover {
+        transform: translateY(-5px);
+    }
+    
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+// Footer
+footer {
+    background-color: $primary-color;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+// Booking Form
+.booking-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+// Gallery Images
+.gallery-img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+// Heritage Items
+.heritage-item {
+    margin-bottom: 40px;
+    
+    .heritage-img {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 5px;
+    }
+}

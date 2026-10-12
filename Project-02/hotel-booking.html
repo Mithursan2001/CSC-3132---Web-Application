@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - Batticaloa City</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Same styles as index.html */
+        :root {
+            --primary-color: #2c5aa0;
+            --secondary-color: #e63946;
+            --accent-color: #f1faee;
+            --text-color: #1d3557;
+            --light-bg: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+        
+        .navbar {
+            background-color: var(--primary-color);
+        }
+        
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        
+        .nav-link:hover {
+            color: var(--accent-color) !important;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .booking-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .hotel-card {
+            margin-bottom: 30px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .hotel-img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">BATTICALOA CITY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="heritage.html">HERITAGE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="hotel-booking.html">HOTEL BOOKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hotel Booking Content -->
+    <div class="container py-5">
+        <h1 class="section-title text-center">Hotel Booking</h1>
+        
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card hotel-card">
+                            <img src="https://source.unsplash.com/600x400/?batticaloa,hotel,beach" class="card-img-top hotel-img" alt="Beach Resort">
+                            <div class="card-body">
+                                <h5 class="card-title">Batticaloa Beach Resort</h5>
+                                <p class="card-text">Luxury beachfront accommodation with stunning views of the Indian Ocean.</p>
+                                <p class="fw-bold">From $120/night</p>
+                                <button class="btn btn-primary">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card hotel-card">
+                            <img src="https://source.unsplash.com/600x400/?batticaloa,hotel,lagoon" class="card-img-top hotel-img" alt="Lagoon Hotel">
+                            <div class="card-body">
+                                <h5 class="card-title">Lagoon View Hotel</h5>
+                                <p class="card-text">Comfortable rooms with panoramic views of the Batticaloa Lagoon.</p>
+                                <p class="fw-bold">From $80/night</p>
+                                <button class="btn btn-primary">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card hotel-card">
+                            <img src="https://source.unsplash.com/600x400/?batticaloa,guesthouse" class="card-img-top hotel-img" alt="City Guesthouse">
+                            <div class="card-body">
+                                <h5 class="card-title">City Center Guesthouse</h5>
+                                <p class="card-text">Budget-friendly accommodation in the heart of Batticaloa city.</p>
+                                <p class="fw-bold">From $40/night</p>
+                                <button class="btn btn-primary">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card hotel-card">
+                            <img src="https://source.unsplash.com/600x400/?batticaloa,eco,lodge" class="card-img-top hotel-img" alt="Eco Lodge">
+                            <div class="card-body">
+                                <h5 class="card-title">Eco Nature Lodge</h5>
+                                <p class="card-text">Sustainable accommodation surrounded by nature and wildlife.</p>
+                                <p class="fw-bold">From $65/night</p>
+                                <button class="btn btn-primary">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="booking-form">
+                    <h3 class="mb-4">Booking Form</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">FIRST NAME</label>
+                            <input type="text" class="form-control" placeholder="Enter your first name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">LAST NAME</label>
+                            <input type="text" class="form-control" placeholder="Enter your last name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">DATE OF ARRIVAL</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">DATE OF DEPARTURE</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">NUMBER OF GUESTS</label>
+                            <select class="form-select">
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5+">5+ Guests</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">EMAIL ID</label>
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">MOBILE NUMBER</label>
+                            <input type="tel" class="form-control" placeholder="Enter your mobile number">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 www.batticaloaally.com | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

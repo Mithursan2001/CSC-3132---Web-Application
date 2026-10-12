@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage - Batticaloa City</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Same styles as index.html */
+        :root {
+            --primary-color: #2c5aa0;
+            --secondary-color: #e63946;
+            --accent-color: #f1faee;
+            --text-color: #1d3557;
+            --light-bg: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+        
+        .navbar {
+            background-color: var(--primary-color);
+        }
+        
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        
+        .nav-link:hover {
+            color: var(--accent-color) !important;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .heritage-item {
+            margin-bottom: 40px;
+        }
+        
+        .heritage-img {
+            height: 300px;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">BATTICALOA CITY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="heritage.html">HERITAGE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotel-booking.html">HOTEL BOOKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Heritage Content -->
+    <div class="container py-5">
+        <h1 class="section-title text-center">Batticaloa Heritage Sites</h1>
+        
+        <div class="heritage-item">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://source.unsplash.com/600x400/?batticaloa,fort" class="heritage-img" alt="Batticaloa Fort">
+                </div>
+                <div class="col-md-6">
+                    <h3>Batticaloa Fort</h3>
+                    <p>Built by the Portuguese in 1628 and later occupied by the Dutch and British, this historic fort stands on an island in the Batticaloa Lagoon. It's one of the best-preserved colonial forts in Sri Lanka.</p>
+                    <p>The fort features distinctive Dutch architectural elements and offers panoramic views of the lagoon and city. It currently houses local government offices but remains open to visitors.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="heritage-item">
+            <div class="row">
+                <div class="col-md-6 order-md-2">
+                    <img src="https://source.unsplash.com/600x400/?batticaloa,temple" class="heritage-img" alt="Mamangaeshwara Temple">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3>Mamangaeshwara Kovil (Temple)</h3>
+                    <p>This unique Hindu temple is located amidst Mamangaeshwara forests, creating a serene and spiritual atmosphere. The temple is dedicated to Lord Shiva and attracts both devotees and nature lovers.</p>
+                    <p>The surrounding Mamangaeshwara ecosystem provides a habitat for various bird species, making it an excellent spot for bird watching while experiencing the cultural heritage of the region.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="heritage-item">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://source.unsplash.com/600x400/?batticaloa,church" class="heritage-img" alt="St. Mary's Cathedral">
+                </div>
+                <div class="col-md-6">
+                    <h3>St. Mary's Cathedral</h3>
+                    <p>This beautiful Catholic cathedral showcases a blend of European and local architectural styles. Built during the colonial era, it stands as a testament to the religious diversity of Batticaloa.</p>
+                    <p>The cathedral's peaceful interior and striking façade make it a significant landmark in the city's religious and cultural landscape.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="heritage-item">
+            <div class="row">
+                <div class="col-md-6 order-md-2">
+                    <img src="https://source.unsplash.com/600x400/?batticaloa,lagoon" class="heritage-img" alt="Batticaloa Lagoon">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3>Batticaloa Lagoon</h3>
+                    <p>The Batticaloa Lagoon is not just a natural wonder but also a cultural heritage site. It's famously known for the "singing fish" phenomenon - mysterious musical sounds that emanate from the water.</p>
+                    <p>The lagoon has played a crucial role in the region's history, serving as a transportation route and source of livelihood for local communities for centuries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 www.batticaloaally.com | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
